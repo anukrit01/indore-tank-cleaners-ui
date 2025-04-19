@@ -1,0 +1,24 @@
+
+<div class="lead-form-container">
+    <h2>Get Your Tank Cleaned Today!</h2>
+    <div class="lead-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="formData.name" placeholder="Your Name" required />
+  
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" [(ngModel)]="formData.phone" placeholder="Your Phone" required />
+  
+      <label for="area">Area (Optional):</label>
+      <input type="text" id="area" [(ngModel)]="formData.area" placeholder="Your Area" />
+  
+      <label for="service">Select Service:</label>
+      <select id="service" [(ngModel)]="formData.service" required>
+        <option value="">Choose Service</option>
+        <option value="Tank Cleaning">Tank Cleaning</option>
+      </select>
+  
+      <button class="submit-btn" (click)="submitForm()">Submit</button>
+      <button class="call-btn" (click)="callNow()">Call Now</button>
+    </div>
+  </div>
+  
